@@ -30,31 +30,32 @@ const Navbar = ({ cartItems }) => {
       text: "Sayfamız",
       icon: <HomeIcon />,
       id: "home",
-      href: "/",
+      to: "/",
     },
     {
       text: "Hakkımızda",
       icon: <InfoIcon />,
       id: "about",
-      href: "#about",
+      to: "#about",
     },
     {
       text: "Menüler",
       icon: <CommentRoundedIcon />,
       id: "menu",
       href: "/menu",
+      to:"/menu"
     },
     {
       text: "İletişim",
       icon: <PhoneRoundedIcon />,
       id: "contact",
-      href: "#contact",
+      to: "#contact",
     },
     {
       text: "Sepet",
       icon: <ShoppingCartRoundedIcon />,
       id: "cart",
-      href: "/cart",
+      to: "/cart",
     },
   ];
 
@@ -91,7 +92,7 @@ const Navbar = ({ cartItems }) => {
           <List>
             {menuOptions.map((item) => (
               <ListItem key={item.text} disablePadding>
-                <ListItemButton href={item.href}>
+                <ListItemButton href={item.to}>
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.text} />
                 </ListItemButton>
