@@ -42,7 +42,7 @@ const Navbar = ({ cartItems }) => {
       text: "Menüler",
       icon: <CommentRoundedIcon />,
       id: "menu",
-      href: "menu",
+      href: "/menu",
     },
     {
       text: "İletişim",
@@ -54,7 +54,7 @@ const Navbar = ({ cartItems }) => {
       text: "Sepet",
       icon: <ShoppingCartRoundedIcon />,
       id: "cart",
-      href: "cart",
+      href: "/cart",
     },
   ];
 
