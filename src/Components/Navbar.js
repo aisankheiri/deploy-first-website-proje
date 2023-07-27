@@ -63,7 +63,7 @@ const Navbar = ({ cartItems }) => {
     <nav>
       <div className="nav-logo-container">
         <Link to="/">
-          <img src={Logo} alt="" />
+          <img className="nav-logo-size"  src={Logo} alt="" />
         </Link>
       </div>
       <div className="navbar-links-container">

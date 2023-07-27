@@ -50,6 +50,7 @@ nav {
   font-weight: 600;
   transition: 0.2s;
 }
+
 .navbar-cart-icon {
   font-size: 1rem;
 }
@@ -445,4 +446,8 @@ nav {
   .about-background-image-container {
     display: none;
   } */
+  .nav-logo-size{
+    height: 15px;
+  
+  }
 }
