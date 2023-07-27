@@ -36,7 +36,7 @@ const Navbar = ({ cartItems }) => {
       text: "Hakkımızda",
       icon: <InfoIcon />,
       id: "about",
-      to: "#about",
+      to: "/about",
     },
     {
       text: "Menüler",
