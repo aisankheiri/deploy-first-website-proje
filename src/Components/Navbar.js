@@ -27,23 +27,23 @@ const Navbar = ({ cartItems }) => {
 
   const menuOptions = [
     {
-      text: "Sayfamızzzzzz",
+      text: "Sayfamız",
       icon: <HomeIcon />,
       id: "home",
-      to: "/",
+      to: "",
     },
     {
       text: "Hakkımızda",
       icon: <InfoIcon />,
       id: "about",
-      to: "/about",
+      to: "#about",
     },
     {
       text: "Menüler",
       icon: <CommentRoundedIcon />,
       id: "menu",
-      href: "/menu",
-      to:"/menu"
+      to: "menu",
+      
     },
     {
       text: "İletişim",
@@ -55,7 +55,7 @@ const Navbar = ({ cartItems }) => {
       text: "Sepet",
       icon: <ShoppingCartRoundedIcon />,
       id: "cart",
-      to: "/cart",
+      to: "cart",
     },
   ];
 
@@ -92,7 +92,7 @@ const Navbar = ({ cartItems }) => {
           <List>
             {menuOptions.map((item) => (
               <ListItem key={item.text} disablePadding>
-                <ListItemButton href={item.to}>
+                <ListItemButton to={item.to}>
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.text} />
                 </ListItemButton>
