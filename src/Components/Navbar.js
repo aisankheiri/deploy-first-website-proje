@@ -27,7 +27,7 @@ const Navbar = ({ cartItems }) => {
 
   const menuOptions = [
     {
-      text: "Sayfamız",
+      text: "Sayfamızzzzzz",
       icon: <HomeIcon />,
       id: "home",
       to: "/",
