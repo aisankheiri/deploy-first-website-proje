@@ -1,13 +1,22 @@
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, json } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import Web from "./Components/Web";
 import Menu from "./Components/Menu";
 import Cart from "./Components/Cart/Cart";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App({addToCart,handleRemoveProduct}) {
   const [cartItems,setCartItems] = useState([]);
+
+  useEffect(()=>{
+    const cartItems = localStorage.getItem("cartItems")
+    setCartItems(JSON.parse(cartItems))
+  },[])//ilk render da calismasi icin ,[] koyuldu
+
+  useEffect(()=>{
+    localStorage.setItem("cartItems",JSON.stringify(cartItems))
+  })
   
   return (
     <div className="App">

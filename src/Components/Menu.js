@@ -9,6 +9,7 @@ import '../Components/Cart/Cart.css'
 
 const Menu = ({ cartItems, setCartItems, addToCart, handleRemoveProduct }) => {
   const { productItems } = data;
+  
   // Sepetteki toplam ürün miktarını hesapla
   let totalQuantity = 0;
   cartItems.forEach(item => {

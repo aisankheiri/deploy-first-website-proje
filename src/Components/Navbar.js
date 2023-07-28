@@ -32,12 +32,12 @@ const Navbar = ({ cartItems }) => {
       id: "home",
       to: "",
     },
-    {
-      text: "Hakkımızda",
-      icon: <InfoIcon />,
-      id: "about",
-      to: "#about",
-    },
+    // {
+    //   text: "Hakkımızda",
+    //   icon: <InfoIcon />,
+    //   id: "about",
+    //   to: "#about",
+    // },
     {
       text: "Menüler",
       icon: <CommentRoundedIcon />,
@@ -92,7 +92,7 @@ const Navbar = ({ cartItems }) => {
           <List>
             {menuOptions.map((item) => (
               <ListItem key={item.text} disablePadding>
-                <ListItemButton to={item.to}>
+                <ListItemButton component={Link} to={item.to}>
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.text} />
                 </ListItemButton>
